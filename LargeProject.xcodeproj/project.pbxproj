@@ -13,7 +13,18 @@
 		D520E3FC26496A5E006A4303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D520E3FA26496A5E006A4303 /* Main.storyboard */; };
 		D520E3FE26496A61006A4303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D520E3FD26496A61006A4303 /* Assets.xcassets */; };
 		D520E40126496A61006A4303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D520E3FF26496A61006A4303 /* LaunchScreen.storyboard */; };
+		D520E41026496CCE006A4303 /* LargeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520E40F26496CCE006A4303 /* LargeProjectTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D520E41226496CCE006A4303 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D520E3E926496A5E006A4303 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D520E3F026496A5E006A4303;
+			remoteInfo = LargeProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D520E3F126496A5E006A4303 /* LargeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LargeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,21 @@
 		D520E3FD26496A61006A4303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D520E40026496A61006A4303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D520E40226496A61006A4303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D520E40D26496CCE006A4303 /* LargeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LargeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D520E40F26496CCE006A4303 /* LargeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeProjectTests.swift; sourceTree = "<group>"; };
+		D520E41126496CCE006A4303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D520E41926496CF7006A4303 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D520E3EE26496A5E006A4303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D520E40A26496CCE006A4303 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D520E3F326496A5E006A4303 /* LargeProject */,
+				D520E40E26496CCE006A4303 /* LargeProjectTests */,
 				D520E3F226496A5E006A4303 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D520E3F126496A5E006A4303 /* LargeProject.app */,
+				D520E40D26496CCE006A4303 /* LargeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +89,16 @@
 				D520E40226496A61006A4303 /* Info.plist */,
 			);
 			path = LargeProject;
+			sourceTree = "<group>";
+		};
+		D520E40E26496CCE006A4303 /* LargeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				D520E41926496CF7006A4303 /* TestPlan.xctestplan */,
+				D520E40F26496CCE006A4303 /* LargeProjectTests.swift */,
+				D520E41126496CCE006A4303 /* Info.plist */,
+			);
+			path = LargeProjectTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +121,24 @@
 			productReference = D520E3F126496A5E006A4303 /* LargeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D520E40C26496CCE006A4303 /* LargeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D520E41426496CCE006A4303 /* Build configuration list for PBXNativeTarget "LargeProjectTests" */;
+			buildPhases = (
+				D520E40926496CCE006A4303 /* Sources */,
+				D520E40A26496CCE006A4303 /* Frameworks */,
+				D520E40B26496CCE006A4303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D520E41326496CCE006A4303 /* PBXTargetDependency */,
+			);
+			name = LargeProjectTests;
+			productName = LargeProjectTests;
+			productReference = D520E40D26496CCE006A4303 /* LargeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +150,10 @@
 				TargetAttributes = {
 					D520E3F026496A5E006A4303 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					D520E40C26496CCE006A4303 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D520E3F026496A5E006A4303;
 					};
 				};
 			};
@@ -115,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				D520E3F026496A5E006A4303 /* LargeProject */,
+				D520E40C26496CCE006A4303 /* LargeProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +184,13 @@
 				D520E40126496A61006A4303 /* LaunchScreen.storyboard in Resources */,
 				D520E3FE26496A61006A4303 /* Assets.xcassets in Resources */,
 				D520E3FC26496A5E006A4303 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D520E40B26496CCE006A4303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +207,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D520E40926496CCE006A4303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D520E41026496CCE006A4303 /* LargeProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D520E41326496CCE006A4303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D520E3F026496A5E006A4303 /* LargeProject */;
+			targetProxy = D520E41226496CCE006A4303 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D520E3FA26496A5E006A4303 /* Main.storyboard */ = {
@@ -319,6 +399,46 @@
 			};
 			name = Release;
 		};
+		D520E41526496CCE006A4303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36PQW8N3MG;
+				INFOPLIST_FILE = LargeProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asepabdaz.LargeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LargeProject.app/LargeProject";
+			};
+			name = Debug;
+		};
+		D520E41626496CCE006A4303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36PQW8N3MG;
+				INFOPLIST_FILE = LargeProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asepabdaz.LargeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LargeProject.app/LargeProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +456,15 @@
 			buildConfigurations = (
 				D520E40626496A61006A4303 /* Debug */,
 				D520E40726496A61006A4303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D520E41426496CCE006A4303 /* Build configuration list for PBXNativeTarget "LargeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D520E41526496CCE006A4303 /* Debug */,
+				D520E41626496CCE006A4303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
